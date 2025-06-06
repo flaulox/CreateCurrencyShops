@@ -7,10 +7,16 @@
   "mixins": [
     "BlueprintOverlayRendererMixin",
     "FilteringBehaviourAccessor",
+    "FilteringBehaviourGetValueSettingsMixin",
+    "PackagerBlockEntityMixin",
+    "PackagerCoinConversionMixin",
+    "PackagerLinkBlockEntityMixin",
+    "StockTickerBlockEntityAccessor",
     "StockTickerInteractionHandlerMixin",
     "TableClothFilteringBehaviourMixin"
   ],
   "client": [
+    "StockKeeperRequestScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

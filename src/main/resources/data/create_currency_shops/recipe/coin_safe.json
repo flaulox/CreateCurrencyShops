@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "ABC",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:plates/brass"
+    },
+    "B": {
+      "item": "create:item_vault"
+    },
+    "C": {
+      "item": "create:propeller"
+    }
+  },
+  "result": {
+    "id": "create_currency_shops:coin_safe",
+    "count": 1
+  }
+}

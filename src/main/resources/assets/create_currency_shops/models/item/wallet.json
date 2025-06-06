@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "create_currency_shops:item/wallet"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "empty": 1
+      },
+      "model": "create_currency_shops:item/wallet_empty"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "neoforge:conditions": [
+    {
+      "type": "create_currency_shops:feature_toggle",
+      "tag": "create_currency_shops:coin_drafter"
+    }
+  ],
+  "key": {
+    "A": {
+      "item": "create:cardboard_block"
+    },
+    "C": {
+      "tag": "c:ingots/iron"
+    },
+    "R": {
+      "tag": "c:nuggets/brass"
+    }
+  },
+  "pattern": [
+    " C ",
+    "CAC",
+    "RCR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create_currency_shops:coin_drafter"
+  }
+}

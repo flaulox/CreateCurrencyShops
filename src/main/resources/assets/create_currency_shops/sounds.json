@@ -1,0 +1,50 @@
+{
+  "coin_safe_door_open": {
+    "sounds": [
+      {
+        "type": "file",
+        "name": "create_currency_shops:coin_safe_door_open"
+      }
+    ]
+  },
+  "coin_safe_door_close": {
+    "sounds": [
+      {
+        "type": "file",
+        "name": "create_currency_shops:coin_safe_door_close"
+      }
+    ]
+  },
+  "coin_safe_wheel_open": {
+    "sounds": [
+      {
+        "type": "file",
+        "name": "create_currency_shops:coin_safe_wheel_open"
+      }
+    ]
+  },
+  "coin_safe_wheel_close": {
+    "sounds": [
+      {
+        "type": "file",
+        "name": "create_currency_shops:coin_safe_wheel_close"
+      }
+    ]
+  },
+  "coin_shake": {
+    "sounds": [
+      {
+        "type": "file",
+        "name": "create_currency_shops:coin_shake"
+      }
+    ]
+  },
+  "coin_ping": {
+    "sounds": [
+      {
+        "type": "file",
+        "name": "create_currency_shops:coin_ping"
+      }
+    ]
+  }
+}

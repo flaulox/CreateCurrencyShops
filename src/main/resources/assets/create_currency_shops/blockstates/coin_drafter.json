@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north,linked=false": { "model": "create_currency_shops:block/coin_drafter/block", "y": 180 },
+    "facing=south,linked=false": { "model": "create_currency_shops:block/coin_drafter/block" },
+    "facing=west,linked=false": { "model": "create_currency_shops:block/coin_drafter/block", "y": 90 },
+    "facing=east,linked=false": { "model": "create_currency_shops:block/coin_drafter/block", "y": 270 },
+    "facing=up,linked=false": { "model": "create_currency_shops:block/coin_drafter/block_vertical" },
+    "facing=down,linked=false": { "model": "create_currency_shops:block/coin_drafter/block_vertical" },
+    "facing=north,linked=true": { "model": "create_currency_shops:block/coin_drafter/block_linked", "y": 180 },
+    "facing=south,linked=true": { "model": "create_currency_shops:block/coin_drafter/block_linked" },
+    "facing=west,linked=true": { "model": "create_currency_shops:block/coin_drafter/block_linked", "y": 90 },
+    "facing=east,linked=true": { "model": "create_currency_shops:block/coin_drafter/block_linked", "y": 270 },
+    "facing=up,linked=true": { "model": "create_currency_shops:block/coin_drafter/block_vertical_linked" },
+    "facing=down,linked=true": { "model": "create_currency_shops:block/coin_drafter/block_vertical_linked" }
+  }
+}

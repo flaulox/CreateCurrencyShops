@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "create_currency_shops:block/coin_safe/block"
+    },
+    "facing=south": {
+      "model": "create_currency_shops:block/coin_safe/block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "create_currency_shops:block/coin_safe/block",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "create_currency_shops:block/coin_safe/block",
+      "y": 90
+    }
+  }
+}

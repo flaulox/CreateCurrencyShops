@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "create_currency_shops:credit_card"
+    }
+  ],
+  "result": {
+    "id": "create_currency_shops:credit_card",
+    "count": 1
+  }
+}

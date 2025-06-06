@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "A B",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:leather"
+    },
+    "B": {
+      "tag": "c:nuggets/brass"
+    }
+  },
+  "result": {
+    "id": "create_currency_shops:wallet",
+    "count": 1
+  }
+}

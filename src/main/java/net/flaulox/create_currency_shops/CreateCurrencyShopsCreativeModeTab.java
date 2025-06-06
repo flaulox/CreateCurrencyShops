@@ -2,6 +2,7 @@ package net.flaulox.create_currency_shops;
 
 
 import com.simibubi.create.AllCreativeModeTabs;
+import net.flaulox.create_currency_shops.util.FeatureToggle;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -26,6 +27,11 @@ public class CreateCurrencyShopsCreativeModeTab {
                         output.accept(CreateCurrencyShopsItems.BRASS_COIN.get());
                         output.accept(CreateCurrencyShopsItems.GOLD_COIN.get());
                         output.accept(CreateCurrencyShopsItems.NETHERITE_COIN.get());
+                        output.accept(CreateCurrencyShopsItems.WALLET.get());
+                        output.accept(CreateCurrencyShopsItems.CREDIT_CARD.get());
+                        output.accept(CreateCurrencyShopsBlocks.COIN_SAFE.get());
+                        if (FeatureToggle.isEnabled(CreateCurrencyShops.asResource("coin_drafter")))
+                            output.accept(CreateCurrencyShopsBlocks.COIN_DRAFTER.get());
 
 
                     }).build());

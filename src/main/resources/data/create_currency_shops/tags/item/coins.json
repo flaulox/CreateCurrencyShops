@@ -1,0 +1,10 @@
+{
+  "values": [
+    "create_currency_shops:copper_coin",
+    "create_currency_shops:iron_coin",
+    "create_currency_shops:zinc_coin",
+    "create_currency_shops:brass_coin",
+    "create_currency_shops:gold_coin",
+    "create_currency_shops:netherite_coin"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "create:block/packager/block",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "0": "create_currency_shops:block/coin_drafter/coin_drafter_frame",
+    "1": "create_currency_shops:block/coin_drafter/coin_drafter_details",
+    "2": "create_currency_shops:block/coin_drafter/coin_drafter_horizontal",
+    "particle": "create:block/packager_frame"
+  }
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "create_currency_shops:block/coin_drafter/hatch",
+	"textures": {
+		"3": "create_currency_shops:block/coin_drafter/coin_drafter_iris_open"
+	}
+}

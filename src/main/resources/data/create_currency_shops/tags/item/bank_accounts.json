@@ -1,0 +1,8 @@
+{
+  "values": [
+    "create_currency_shops:currency_item",
+    "create_currency_shops:write_draft_item",
+    "create_currency_shops:credit_card",
+    "create_currency_shops:coin_draft"
+  ]
+}
