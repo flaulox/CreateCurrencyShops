@@ -22,15 +22,19 @@ jobs:
       
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          cache-read-only: false
       
       - name: Extract version from tag
         id: version
         run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
       
-
+      - name: Build
+        run: ./gradlew build --no-daemon
+      
       - name: Publish to CurseForge and Modrinth
         env:
           CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
           MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
           CHANGELOG: ${{ github.event.release.body }}
-        run: ./gradlew publishMods -Pmod_version=${{ steps.version.outputs.VERSION }}
+        run: ./gradlew publishMods -Pmod_version=${{ steps.version.outputs.VERSION }} --no-daemon
