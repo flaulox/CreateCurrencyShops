@@ -25,6 +25,9 @@ jobs:
         with:
           cache-read-only: false
       
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+      
       - name: Extract version from tag
         id: version
         run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
