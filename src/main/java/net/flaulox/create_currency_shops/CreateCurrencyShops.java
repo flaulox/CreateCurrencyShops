@@ -47,11 +47,6 @@ public class CreateCurrencyShops {
     public static final CreateCurrencyShopsRegistrate CREATE_CURRENCY_SHOPS_REGISTRATE = CreateCurrencyShopsRegistrate.create(MODID)
             .defaultCreativeTab((ResourceKey<CreativeModeTab>) null);
 
-    static {
-        CREATE_CURRENCY_SHOPS_REGISTRATE.setTooltipModifierFactory(item -> new ItemDescription.Modifier(item, FontHelper.Palette.STANDARD_CREATE)
-                .andThen(TooltipModifier.mapNull(create(item))));
-    }
-
 
 
 
@@ -76,8 +71,6 @@ public class CreateCurrencyShops {
         CreateCurrencyShopsPartialModels.init();
         CreateCurrencyShopsSoundEvents.SOUND_EVENTS.register(modEventBus);
         NeoForge.EVENT_BUS.register(CoinTooltipHandler.class);
-        
-        PonderIndex.addPlugin(new CurrencyShopsPonderPlugin());
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -131,6 +124,8 @@ public class CreateCurrencyShops {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            PonderIndex.addPlugin(new CurrencyShopsPonderPlugin());
+            
             event.enqueueWork(() -> {
                 WalletModelPredicates.register();
                 BlockEntityRenderers.register(
