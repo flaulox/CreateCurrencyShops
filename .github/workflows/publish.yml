@@ -40,4 +40,4 @@ jobs:
           CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
           MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
           CHANGELOG: ${{ github.event.release.body }}
-        run: ./gradlew publishMods -Pmod_version=${{ steps.version.outputs.VERSION }} --no-daemon
+        run: ./gradlew publishMods -Pmod_version=${{ steps.version.outputs.VERSION }} --no-daemon --no-configuration-cache
