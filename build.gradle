@@ -3,9 +3,10 @@ plugins {
     id 'maven-publish'
     id 'idea'
     id 'net.neoforged.moddev' version '2.0.88'
+    id 'me.modmuss50.mod-publish-plugin' version '0.5.1'
 }
 
-version = mod_version
+version = project.hasProperty('mod_version') ? project.property('mod_version') : "${minecraft_version}-${mod_version}"
 group = mod_group_id
 
 repositories {
@@ -191,5 +192,29 @@ idea {
     module {
         downloadSources = true
         downloadJavadoc = true
+    }
+}
+
+publishMods {
+    file = jar.archiveFile
+    changelog = providers.environmentVariable("CHANGELOG").getOrElse("Release ${version}")
+    type = STABLE
+    modLoaders.add("neoforge")
+    curseforge {
+        accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
+        projectId = "1276341"
+        minecraftVersions.add(minecraft_version)
+        requires {
+            slug = "create"
+        }
+    }
+
+    modrinth {
+        accessToken = providers.environmentVariable("MODRINTH_TOKEN")
+        projectId = "BdlILXeV"
+        minecraftVersions.add(minecraft_version)
+        requires {
+            slug = "create"
+        }
     }
 }
